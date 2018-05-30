@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#contacts_button{
+    float : right;
+    position : fixed;
+    left : 0px;
+    top : 300px;
+    border : 1px solid black;
+}
+
+#contacts_button ul{
+}
+
+#contacts_button ul li{
+    width : 100px;
+
+}

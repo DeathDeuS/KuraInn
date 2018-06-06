@@ -28,8 +28,24 @@ class Layout extends Component {
                 </div>
 
                 {/* Footer code */}
-                <div>
-                    Footer here
+                <div class="row">
+                    <div class="col-1">
+                        Nom : <br/>
+                        E-mail : <br/>
+                        Message : <br/>
+                    </div>
+
+                    <div class="col-11">
+                        <form action="https://formspree.io/your@email.com" 
+                            method="POST">
+                            <input type="text" name="name" required="required"/>
+                            <br/>
+                            <input type="email" name="_replyto" required="required"/>
+                            <br/>
+                            <input type="text" name="message" required="required"/>
+                            <input type="submit" value="Envoyer"/>
+                        </form> 
+                    </div>
                 </div>
             </div>
             

@@ -1,0 +1,53 @@
+
+.presentation_card{
+    /* text-align: center;
+    margin : auto;
+    margin-top : 0;
+    padding : 5px; */
+}
+
+body{
+    font-family: 'Open Sans';
+    background-color: white;
+}
+
+.img-round{
+    border-radius : 110px;
+    width:30vh;
+    height:30vh;
+
+    margin : auto;
+    
+}
+
+.shadowbox{
+    box-shadow: 3px 3px 3px gray, -3px -3px 3px gray, -3px 3px 3px gray, 3px -3px 3px gray;
+}
+
+.img_p_home
+{
+    max-height : 400px;
+    width : 80%;
+}
+
+h4{
+    margin : 10px;
+}
+
+
+@media screen and (max-width: 775px) {
+    #presentation_picture_manager  div:first-child{
+        /* display : block; */
+    }
+    
+    .presentation_card{
+        
+        padding : 10px;
+        margin : 10px;
+        border : 1px solid  white;
+        box-shadow: 3px 3px 3px white, -3px -3px 3px gray, -3px 3px 3px gray, 3px -3px 3px gray;
+
+    }
+    
+
+}

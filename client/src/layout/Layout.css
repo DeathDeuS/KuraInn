@@ -1,5 +1,7 @@
 .icon-bar {
-    width: 90px;
+    width: 10%;
+    max-width: 70px;
+    min-width: 45px;
     background-color: #555;
     position: fixed;
     top: 50%;
@@ -8,19 +10,42 @@
 
 .icon-bar a {
     display: block;
-    padding: 16px;
+    padding: 20px;
 
 }
 
 .icon-bar i {
     display: block;
     text-align: center;
-    padding: 16px;
+    padding: 16px auto;
     transition: all 0.3s ease;
     color: white;
-    font-size: 36px;
+    font-size: 20px;
 }
 
 .icon-bar a:hover {
     background-color: #4CAF50;
+}
+
+.fas {
+    display: inline-block;
+}
+
+#droprightMenuDiv {
+    display: block;
+    width: 100%;
+}
+
+.footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 2vw;
+}
+
+.sidebar-button {
+    border-radius: 0 !important;
 }

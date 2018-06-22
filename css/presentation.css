@@ -9,6 +9,7 @@
 body{
     font-family: 'Open Sans';
     background-color: white;
+    color: #5a5a5a;
 }
 
 .img-round{
@@ -21,7 +22,7 @@ body{
 }
 
 .shadowbox{
-    box-shadow: 3px 3px 3px gray, -3px -3px 3px gray, -3px 3px 3px gray, 3px -3px 3px gray;
+    box-shadow: 2px 2px 2px rgb(180, 177, 177), -2px -2px 2px rgb(180, 177, 177), -2px 2px 2px rgb(180, 177, 177), 2px -2px 2px rgb(180, 177, 177);
 }
 
 .img_p_home
@@ -45,8 +46,12 @@ h4{
         padding : 10px;
         margin : 10px;
         border : 1px solid  white;
-        box-shadow: 3px 3px 3px white, -3px -3px 3px gray, -3px 3px 3px gray, 3px -3px 3px gray;
+        box-shadow: inset 3px 3px 3px rgb(180, 177, 177), inset -3px -3px 3px rgb(180, 177, 177);
 
+    }
+
+    .img_p_home{
+        width : 100%;
     }
     
 

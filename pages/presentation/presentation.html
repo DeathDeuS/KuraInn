@@ -6,14 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="../../css/bootstrap.css" />
     <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../../css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../../css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../../css/presentation.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../../css/slider.css" />
 </head>
 
 <body>
+
+    <section id="slider_accueil">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="carousel-caption d-none d-md-block slider_text_block">
+                        <h5>Bienvenue </h5>
+                        <p>Venez découvrir Mangareva, île mystérieuse dans l'archipel des Gambiers, berceau du catholicisme
+                            en Polynésie, perle du Pacifique </p>
+                    </div>
+                    <img class="d-block w-100" src="../../asset/slider_accueil/bienvenue.jpg" alt="bienvenue">
+
+
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-caption d-none d-md-block slider_text_block">
+                        <h5>Nos chambres</h5>
+                        <p>sont prêtes à vous a ccueillir que vous soyez seul ou en famille.</p>
+                    </div>
+                    <img class="d-block w-100" src="../../asset/slider_accueil/bungalow.jpg" alt="bungalow">
+
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-caption d-none d-md-block slider_text_block">
+                        <h5>Les activités de l'île</h5>
+                        <p> Venez découvrir notre île avec ses vestiges de l''époque royale ou coloniale,nos motu,nos lagons
+                            et nos perles</p>
+                    </div>
+                    <img class="d-block w-100" src="../../asset/slider_accueil/activites.jpg" alt="activites">
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <div class="carousel-caption d-none d-md-block slider_text_block">
+                        <h5>Mangareva</h5>
+                        <p>...</p>
+                    </div>
+                    <img class="d-block w-100" src="../../asset/slider_accueil/mangareva.jpg" alt="mangareva">
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
     <section id="presentation" class="container text-center">
+
+
 
         <h2>Kura Inn pour une expérience inoubliable</h2>
         <br>
@@ -35,9 +98,10 @@
         <br>
 
         <div id="presentation_picture_manager" class="row  ">
-
+            <br>
             <!-- photos gérants -->
             <div class="presentation_card col-md-6 col-xs-12">
+                <br>
                 <img class="img-round shadowbox" src="../../asset/avatar_girl.jpg">
                 <!-- <div class="img-round" style="background:url(../../asset/avatar_girl.jpg) no-repeat center;"></div> -->
                 <h4>Mlle Beatrice Laureen</h4>
@@ -45,6 +109,7 @@
             </div>
 
             <div class="presentation_card col-md-6 col-xs-12">
+                <br>
                 <img class=" img-round shadowbox" src="../../asset/avatar_boy.jpg">
                 <!-- <div class="img-round" style="background:url(../../asset/avatar_boy.jpg) no-repeat center; "></div> -->
                 <h4>M lorio</h4>
@@ -73,7 +138,6 @@
                 </div>
             </div>
     </section>
-    <footer style="height : 300px"></footer>
 
 </body>
 

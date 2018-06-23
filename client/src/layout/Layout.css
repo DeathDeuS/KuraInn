@@ -1,53 +1,54 @@
 @charset "UTF-8";
 
 
-.logo {
-    transform: rotate(-10deg);
-}
-
 header {
-    height : 78px;
-    background-color: rgba(136, 171, 255, 0.3);
-    text-align : center;
-    position: absolute;
-    top: 0;
-    font-family: "PT Sans Narrow";
-    z-index: 2000;
-    width: 100%;
-    margin: 0 !important;  /* Pour outrepasser Bootstrap qui décale le header à gauche */
-}
-
-h1 {
-    height : 100px;
-    margin : 0px;
+    background-color: rgba(27, 99, 128, 0.8);
+    text-align: center;
+    font-family: 'Open Sans', "PT Sans Narrow";
+    height: 70px;
+    margin-top: 5px;
 }
 
 .navtop {
-    margin-top : 30px;
+    vertical-align: middle;
 }
 
 header a {
-    display : block;
-    height : 50px !important;
-    text-align : center;
-    text-decoration : none;
-    /* text-shadow: 0px 0 1px rgba(0,0,0,1); */
-    color : rgb(255, 255, 255);
-    font-size : 2em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 0 1px rgba(0, 0, 0, 1);
+    font-size: 1.2em;
+    color: #d4d6d8;
+}
+
+#title img {
+    transform: rotate(-10deg);
+    width: 350px !important;
+    margin-top: 10px;
+    z-index: 2000;
+    background-color: rgba(76, 175, 79, 0);
 }
 
 header a:hover {
-    text-decoration : none;
-    color : white;
-    text-shadow: 0px 0 1px rgba(255, 255, 255,0);
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0 1px rgba(255, 255, 255, 0);
 }
 
-li, .col, ul {
-    padding : 0px;
+li,
+.col,
+ul {
+    padding: 0px;
+}
+
+ul {
+    margin-top: 35px !important;
+    transform: translateY(-50%);
 }
 
 .icon {
-    display : none;
+    display: none;
 }
 
 .sideMenuToggle {
@@ -121,39 +122,75 @@ div.dropdown-menu.show {
     font-size: 36px;
 }
 
+.arrow-right {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+
+
+
+@media screen and (max-width: 850px) {
+    #title img {
+        width: 280px !important;
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+    header {
+        height: 220px;
+        margin-top : 0;
+        
+        transform: rotate(0deg);
+    }
+
+
+}
 
 @media screen and (max-width: 650px) {
 
+    #top, #title{
+        padding : 0;
+    }
     .navtop li {
         display: none;
     }
-
     .navtop ul {
-        text-align : center;
+        text-align: center;
     }
-
     .icon {
         display: block;
+        margin: auto;
+        font-size: 2em;
+    }
+    .navtop.responsive {    
         margin : auto;
-        font-size : 2em;
-    }
-
-    .navtop.responsive {
-        position : relative;
-    }
-
-    .navtop.responsive a.icon {
-        position: relative;
-        right: 0;
-        top: 0;
-    }
-
-    .navtop.responsive li {
-        float : top;
-        display : block;
-        width : 100%;
-        text-align: left;
-        background-color : #0a93f5 ;
     }
     
+    .navtop.responsive li {
+        display: block;
+
+    }
+
+    #top_ul{
+        margin : auto;
+        
+    }
+
+    #mySidenav {
+        display: none !important;
+    }
+
+    #sideMenuToggle {
+        display: block !important;
+    }
+
+    .closebtn {
+        display: block !important;
+    }
 }

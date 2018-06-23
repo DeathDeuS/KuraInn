@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body{
+    font-family : "Baskerville Old Face", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(194, 205, 233, 0.541);
+    background-image : url("asset/bg3.jpg"); 
+}
+ul{
+    list-style: none;
+}

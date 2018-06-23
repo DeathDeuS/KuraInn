@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Route, BrowserRouter } from 'react-router-dom';
 import Layout from './layout/Layout';
-import Home from './layout/Home';
+import Presentation from './layout/Presentation';
 
 
 class App extends Component {
@@ -22,7 +21,7 @@ class App extends Component {
                   
         <Layout>
 
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Presentation} />
           {/* <Route path="/rooms" component={Rooms} />
           <Route path='/activities' component={Activities}/>
           <Route path='/mangareva' component={Mangareva}/> */}

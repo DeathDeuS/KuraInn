@@ -1,15 +1,35 @@
+/* ***********
+Ce fichier contient les éléments permanents du site : header, footer, et sidebar.
+*********** */
+
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Layout.css';
+import './Presentation.js';
+// import '../facebook/facebook';
  
 class Layout extends Component {
     render() {
         return (
             
             <div>
+
                 {/* Header/Navbar code */}
                 <div>
-                    Header here
+                    <header className="row">
+                        <div id="title" className="col-4 logo">
+                        <img src="asset/logo.png" className="w-100" />
+                        </div>
+                        <nav id="top" className="navtop col-8">
+                        <ul id="top_ul" className="row w-100 m-0">
+                            <a href="javascript:void(0);" style={{fontSize: 25}} className="icon" onclick="myFunction1()">&#9776;</a>
+                            <li className="col"><a href="home.html">Accueil</a></li>
+                            <li className="col"><a href="room.html">Chambres</a></li>
+                            <li className="col"><a href="activities">Activités</a></li>
+                            <li className="col"><a href="Mangareva">Mangareva</a></li>
+                        </ul>
+                        </nav> 
+                    </header>
                 </div>
 
                 <section>
@@ -26,8 +46,9 @@ class Layout extends Component {
                             <i class="fas fa-phone"/>
                         </a>
                         <div class="dropdown-menu">
-                            {/* <a class="dropdown-item" href="#">Action</a> */}
-                            Numéro de téléphone ici
+                            <br/>
+                            (+689) 87 72 03 31
+                            <br/>
                         </div>
                     </div>                    <div class="btn-group dropright" id="droprightMenuDiv">
                         <a class="btn btn-secondary dropdown-toggle sidebar-button" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -35,7 +56,9 @@ class Layout extends Component {
                         </a>
                         <div class="dropdown-menu">
                             {/* <a class="dropdown-item" href="#">Action</a> */}
-                            Adresse mail là
+                            <br/>
+                            raoulxcoralie@mail.pf
+                            <br/>
                         </div>
                     </div>
                 </div>
@@ -43,7 +66,7 @@ class Layout extends Component {
                 {/* Footer code */}
                 <div class="footer">
                 Pour nous contacter, veuillez remplir ce formulaire :
-                    <form action="https://formspree.io/your@email.com" 
+                    <form action="https://formspree.io/raoulxcoralie@mail.pf" 
                         method="POST">
                         <div class="row">
                             <div class="col-2">
@@ -73,6 +96,8 @@ class Layout extends Component {
                     </form> 
                 </div>
             </div>
+
+            
             
         );
     }

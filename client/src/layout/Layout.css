@@ -50,6 +50,13 @@ li, .col, ul {
     display : none;
 }
 
+.sideMenuToggle {
+    background-color: #555;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .icon-bar {
     width: 10%;
     max-width: 70px;
@@ -58,6 +65,7 @@ li, .col, ul {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
+    transition: 0.5s;
 }
 
 .icon-bar a {
@@ -107,6 +115,10 @@ div.dropdown-menu.show {
 
 .sidebar-button {
     border-radius: 0 !important;   /* overrides Bootstrap styling to make sidebar buttons square */
+}
+
+.closebtn {
+    font-size: 36px;
 }
 
 

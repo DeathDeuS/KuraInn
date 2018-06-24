@@ -1,99 +1,127 @@
 import React, { Component } from 'react';
 import './Bungalow.css';
+import ReactDOM from 'react-dom';
+import $ from 'jquery';
 
 class Bungalow extends Component {
 
     render() {
 
-              return (
+        return (
             
             <div>
+
                 <section id="bungalow1">
                     <div className="container">
                         <div className="row">
                             <h2 className="col-10">Bungalow 1</h2>
 
                             <div className="col-10 m-auto" style={{height: 400}}>
-                                {/*  CAROUSSEL */}
-                                {/* <Carousel>
-                                    <Carousel.Item>
-                                        <img width={900} height={500} alt="900x500" src="asset/bungalow/bungalow1.jpg" />
-                                        <Carousel.Caption>
-                                        <h3>First slide label</h3>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                        </Carousel.Caption>
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img width={900} height={500} alt="900x500" src="asset/bungalow/salon1.jpg" />
-                                        <Carousel.Caption>
-                                        <h3>Second slide label</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        </Carousel.Caption>
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img width={900} height={500} alt="900x500" src="asset/bungalow/terrasse1.jpg" />
-                                        <Carousel.Caption>
-                                        <h3>Third slide label</h3>
-                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                        </Carousel.Caption>
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img width={900} height={500} alt="900x500" src="asset/bungalow/cuisine1.jpg" />
-                                        <Carousel.Caption>
-                                        <h3>Fourth slide label</h3>
-                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                        </Carousel.Caption>
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img width={900} height={500} alt="900x500" src="asset/bungalow/wc1.jpg" />
-                                        <Carousel.Caption>
-                                        <h3>Third slide label</h3>
-                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                        </Carousel.Caption>
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img width={900} height={500} alt="900x500" src="asset/bungalow/lit1.jpg" />
-                                        <Carousel.Caption>
-                                        <h3>Third slide label</h3>
-                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                        </Carousel.Caption>
-                                    </Carousel.Item>
-                                </Carousel>; */}
+
+                                <section id="slider_accueil">
+                                    <div id="carouselBungalow" className="carousel slide carousel-fade" data-ride="carousel">
+                                        <ol className="carousel-indicators">
+                                            <li data-target="#carouselBungalow" data-slide-to={0} className="active" />
+                                            <li data-target="#carouselBungalow" data-slide-to={1} />
+                                            <li data-target="#carouselBungalow" data-slide-to={2} />
+                                            <li data-target="#carouselBungalow" data-slide-to={3} />
+                                            <li data-target="#carouselBungalow" data-slide-to={4} />
+                                            <li data-target="#carouselBungalow" data-slide-to={5} />
+                                        </ol>
+
+                                        <div className="carousel-inner">
+
+                                            <div className="carousel-item active">
+                                                <div className="carousel-caption d-none d-md-block slider_text_block">
+                                                </div>
+                                                <img className="d-block w-100" src="asset/bungalow/bungalow1.jpg" alt="bienvenue" />
+                                            </div>
+
+                                            <div className="carousel-item">
+                                                <div className="carousel-caption d-none d-md-block slider_text_block">
+                                                </div>
+                                                <img className="d-block w-100" src="asset/bungalow/salon1.jpg" alt="bungalow" />
+                                            </div>
+
+                                            <div className="carousel-item">
+                                                <div className="carousel-caption d-none d-md-block slider_text_block">
+                                                </div>
+                                                <img className="d-block w-100" src="asset/bungalow/terrasse1.jpg" alt="activites" />
+                                            </div>
+
+                                            <div className="carousel-item">
+                                                <div className="carousel-caption d-none d-md-block slider_text_block">
+                                                </div>
+                                                <img className="d-block w-100" src="asset/bungalow/cuisine1.jpg" alt="mangareva" />
+                                            </div>
+
+                                            <div className="carousel-item">
+                                                <div className="carousel-caption d-none d-md-block slider_text_block">
+                                                </div>
+                                                <img className="d-block w-100" src="asset/bungalow/wc1.jpg" alt="mangareva" />
+                                            </div>
+
+                                            <div className="carousel-item">
+                                                <div className="carousel-caption d-none d-md-block slider_text_block">
+                                                </div>
+                                                <img className="d-block w-100" src="asset/bungalow/lit1.jpg" alt="mangareva" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </section>
 
                             </div>
 
                             <aside className="col-9">Texte description chambre pour donner envie</aside>
 
                             {/*  ----------------------- FORM MODAL  -------------------------------  */}
-                            <button type="button" className="btn btn-primary  col-6" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style={{margin: 'auto', marginTop: 25}}>Réservez ce bungalow</button>
-                            <div className="modal fade" id="exampleModal" tabIndex={-1} role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <button type="button" className="btn btn-primary  col-6" data-toggle="modal" data-target="#modalForm1" data-whatever="@mdo" style={{margin: 'auto', marginTop: 25}}>Réservez ce bungalow</button>
+                            <div className="modal fade" id="modalForm1" tabIndex={-1} role="dialog" aria-labelledby="modalFormLabel1" aria-hidden="true">
                             
                                 <div className="modal-dialog" role="document">
                                     <div className="modal-content">
 
                                         <div className="modal-header">
-                                            <h5 className="modal-title" id="exampleModalLabel">New message</h5>
+                                            <h5 className="modal-title" id="modalFormLabel1">Demande de réservation</h5>
                                             <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">×</span>
                                             </button>
                                         </div>
 
                                         <div className="modal-body">
-                                            <form>
+                                            <form action="https://formspree.io/jchansin.tcc@gmail.com" method="POST" id="bookingForm1">
+
                                                 <div className="form-group">
-                                                <label htmlFor="recipient-name" className="col-form-label">Recipient:</label>
-                                                <input className="form-control" id="recipient-name" type="text" />
+                                                    <select className="custom-control custom-select" type="text" name="Bungalow choisi" required="required">
+                                                        <option selected="Bungalow 1">Bungalow 1</option>
+                                                        <option value="Bungalow 2">Bungalow 2</option>
+                                                    </select>   
+                                                </div>
+
+                                                <div className="form-group">
+                                                    <label htmlFor="datepicker1" className="col-form-label">Date :</label>
+                                                    <input className="form-control" id="datepicker1" width="276" name="Date"/>
+                                                </div>
+
+                                                <div className="form-group">
+                                                    <label htmlFor="recipient-name" className="col-form-label">Nom :</label>
+                                                    <input className="form-control" id="recipient-name1" type="text" name="Nom" />
                                                 </div>
                                                 <div className="form-group">
-                                                <label htmlFor="message-text" className="col-form-label">Message:</label>
-                                                <textarea className="form-control" id="message-text" defaultValue={""} />
+                                                    <label htmlFor="recipient-mail" className="col-form-label">E-mail :</label>
+                                                    <input className="form-control" id="recipient-mail1" type="email" name="Mail"/>
+                                                </div>
+                                                <div className="form-group">
+                                                    <label htmlFor="message-text" className="col-form-label">Message:</label>
+                                                    <textarea className="form-control" id="message-text1" name="Message"/>
                                                 </div>
                                             </form>
                                         </div>
 
                                         <div className="modal-footer">
-                                            <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="button" className="btn btn-primary">Send message</button>
+                                            <button type="button" className="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                                            <button type="submit" className="btn btn-primary" form="bookingForm1">Envoyer</button>
                                         </div>
 
                                     </div>
@@ -108,85 +136,114 @@ class Bungalow extends Component {
                         <div className="row">
                             <h2 className="col-10">Bungalow 2</h2>
                             <div className="col-10 m-auto carousel1" style={{height: 400}}>
-                                {/*  CAROUSSEL */}
-                                {/* <Carousel>
-                                    <Carousel.Item>
-                                        <img width={900} height={500} alt="900x500" src="asset/bungalow/bungalow2.jpg" />
-                                        <Carousel.Caption>
-                                        <h3>First slide label</h3>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                        </Carousel.Caption>
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img width={900} height={500} alt="900x500" src="asset/bungalow/salon2.jpg" />
-                                        <Carousel.Caption>
-                                        <h3>Second slide label</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        </Carousel.Caption>
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img width={900} height={500} alt="900x500" src="asset/bungalow/terrasse2.jpg" />
-                                        <Carousel.Caption>
-                                        <h3>Third slide label</h3>
-                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                        </Carousel.Caption>
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img width={900} height={500} alt="900x500" src="asset/bungalow/cuisine2.jpg" />
-                                        <Carousel.Caption>
-                                        <h3>Fourth slide label</h3>
-                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                        </Carousel.Caption>
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img width={900} height={500} alt="900x500" src="asset/bungalow/wc2.jpg" />
-                                        <Carousel.Caption>
-                                        <h3>Third slide label</h3>
-                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                        </Carousel.Caption>
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img width={900} height={500} alt="900x500" src="asset/bungalow/lit2.jpg" />
-                                        <Carousel.Caption>
-                                        <h3>Third slide label</h3>
-                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                        </Carousel.Caption>
-                                    </Carousel.Item>
-                                </Carousel>; */}
+
+                                <section id="slider_accueil">
+                                    <div id="carouselBungalow2" className="carousel slide carousel-fade" data-ride="carousel">
+                                        <ol className="carousel-indicators">
+                                            <li data-target="#carouselBungalow2" data-slide-to={0} className="active" />
+                                            <li data-target="#carouselBungalow2" data-slide-to={1} />
+                                            <li data-target="#carouselBungalow2" data-slide-to={2} />
+                                            <li data-target="#carouselBungalow2" data-slide-to={3} />
+                                            <li data-target="#carouselBungalow2" data-slide-to={4} />
+                                            <li data-target="#carouselBungalow2" data-slide-to={5} />
+                                        </ol>
+
+                                        <div className="carousel-inner">
+                                            <div className="carousel-item active">
+                                                <div className="carousel-caption d-none d-md-block slider_text_block">
+                                                </div>
+                                                <img className="d-block w-100" src="asset/bungalow/bungalow2.jpg" alt="bienvenue" />
+                                            </div>
+
+                                            <div className="carousel-item">
+                                                <div className="carousel-caption d-none d-md-block slider_text_block">
+                                                </div>
+                                                <img className="d-block w-100" src="asset/bungalow/salon2.jpg" alt="bungalow" />
+                                            </div>
+
+                                            <div className="carousel-item">
+                                                <div className="carousel-caption d-none d-md-block slider_text_block">
+                                                </div>
+                                                <img className="d-block w-100" src="asset/bungalow/terrasse2.jpg" alt="activites" />
+                                            </div>
+
+                                            <div className="carousel-item">
+                                                <div className="carousel-caption d-none d-md-block slider_text_block">
+                                                </div>
+                                                <img className="d-block w-100" src="asset/bungalow/cuisine2.jpg" alt="mangareva" />
+                                            </div>
+
+                                            <div className="carousel-item">
+                                                <div className="carousel-caption d-none d-md-block slider_text_block">
+                                                </div>
+                                                <img className="d-block w-100" src="asset/bungalow/wc2.jpg" alt="mangareva" />
+                                            </div>
+
+                                            <div className="carousel-item">
+                                                <div className="carousel-caption d-none d-md-block slider_text_block">
+                                                </div>
+                                                <img className="d-block w-100" src="asset/bungalow/lit2.jpg" alt="mangareva" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </section>
+
+
                             </div>
                             <aside className="col-9">Texte description chambre pour donner envie</aside>
 
 
                             {/*  ----------------------- FORM MODAL  -------------------------------  */}
-                            <button type="button" className="btn btn-primary col-6" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style={{margin: 'auto', marginTop: 25}}>Réservez ce bungalow</button>
-                            <div className="modal fade" id="exampleModal" tabIndex={-1} role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <button type="button" className="btn btn-primary col-6" data-toggle="modal" data-target="#modalForm2" data-whatever="@mdo" style={{margin: 'auto', marginTop: 25}}>Réservez ce bungalow</button>
+                            <div className="modal fade" id="modalForm2" tabIndex={-1} role="dialog" aria-labelledby="modalFormLabel2" aria-hidden="true">
                                 
                                 <div className="modal-dialog" role="document">
 
                                     <div className="modal-content">
                                         <div className="modal-header">
-                                            <h5 className="modal-title" id="exampleModalLabel">New message</h5>
+                                            <h5 className="modal-title" id="modalFormLabel2">Demande de réservation</h5>
                                             <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">×</span>
                                             </button>
                                         </div>
 
                                         <div className="modal-body">
-                                            <form>
+                                            <form action="https://formspree.io/jchansin.tcc@gmail.com" method="POST" id="bookingForm2">
+
                                                 <div className="form-group">
-                                                <label htmlFor="recipient-name" className="col-form-label">Recipient:</label>
-                                                <input className="form-control" id="recipient-name" type="text" />
+                                                    <select className="custom-control custom-select" type="text" name="Bungalow choisi" required="required">
+                                                        <option selected="Bungalow 2">Bungalow 2</option>
+                                                        <option value="Bungalow 1">Bungalow 1</option>
+                                                    </select>   
                                                 </div>
+
+                                                 <div className="form-group">
+                                                    <label htmlFor="datepicker2" className="col-form-label">Date :</label>
+                                                    <input className="form-control" id="datepicker2" width="276" name="Date"/>
+                                                </div>
+
                                                 <div className="form-group">
-                                                <label htmlFor="message-text" className="col-form-label">Message:</label>
-                                                <textarea className="form-control" id="message-text" defaultValue={""} />
+                                                    <label htmlFor="recipient-name" className="col-form-label">Nom :</label>
+                                                    <input className="form-control" id="recipient-name" type="text" name="Nom" required="required"/>
                                                 </div>
+
+                                                <div className="form-group">
+                                                    <label htmlFor="recipient-mail" className="col-form-label">E-mail :</label>
+                                                    <input className="form-control" id="recipient-mail" type="email" name="Mail" required="required"/>
+                                                </div>
+
+                                                <div className="form-group">
+                                                    <label htmlFor="message-text" className="col-form-label">Message :</label>
+                                                    <textarea className="form-control" id="message-text" name="Message" required="required"/>
+                                                </div>
+                                       
                                             </form>
                                         </div>
 
                                         <div className="modal-footer">
-                                            <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="button" className="btn btn-primary">Send message</button>
+                                            <button type="button" className="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                                            <button type="submit" className="btn btn-primary" form="bookingForm2">Envoyer</button>
                                         </div>
 
                                     </div>
@@ -195,10 +252,6 @@ class Bungalow extends Component {
                         </div>
                     </div>
                 </section>
-                {/* jQuery */}
-                {/* FlexSlider */}
-                {/* Syntax Highlighter */}
-                {/* Optional FlexSlider Additions */}
       </div>
 
         );

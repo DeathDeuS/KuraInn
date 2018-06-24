@@ -23,8 +23,12 @@ header a {
 }
 
 #title img {
-    transform: rotate(-10deg);
+    transform:rotate(-10deg);
+    -webkit-transform:rotate(-10deg);
+    -moz-transform:rotate(-10deg);
+    -o-transform:rotate(-10deg); 
     width: 350px !important;
+    height: auto;
     margin-top: 10px;
     z-index: 2000;
     background-color: rgba(76, 175, 79, 0);
@@ -67,6 +71,7 @@ ul {
     top: 50%;
     transform: translateY(-50%);
     transition: 0.5s;
+    z-index: 1500;
 }
 
 .icon-bar a {

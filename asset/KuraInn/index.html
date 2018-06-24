@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kura Inn</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/contacts_button.css" />
+    <script src="js/jquery.js" ></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sticky.min.js"></script>
+    <script>
+        var sticky = new Sticky('.selector');
+    </script>
+    <script>
+        $(document).ready(function(){
+        $('.carousel').carousel({interval: 5000, pause: false});
+
+        })
+
+        
+    </script>
+</head>
+<body data-sticky-container>
+
+    <!-------------- HEADER -------------->
+   <!--  <header>
+
+        <div id="contacts_button">
+            <ul >
+                <li><a href="">L</a></li>
+                <li><a href="">F</a></li>
+                <li><a href="">M</a></li>
+                <li><a href="">T</a></li>
+            </ul>
+        </div>
+
+
+        <div id = "Title">
+            <h1>KURA INN</h1>
+        </div>
+
+
+       
+          <ul class="row">
+                <li class="col"><a href="home.html">Accueil</a></li>
+                <li class="col"><a href="room.html">Bungalows</a></li>
+                <li class="col"><a href="activities">Activités</a></li>
+                <li class="col"><a href="Mangareva">Mangareva</a></li>
+            </ul>
+        </nav> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+
+    </header>
+
+
+
+    <!-------------- SLIDER -------------->
+    <section class="current"> 
+            <div id="slider_accueil" >
+           <!--  <div id="carouselExampleIndicators" class="carousel slide carousel-fade shadowbox" data-ride="carousel" style="margin-top :-20px;">
+                   <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                   </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="asset/slider_accueil/bienvenue.jpg" alt="bienvenue" >
+                        <div class="carousel-caption d-none d-md-block slider_text_block">
+                                <h5 id="s_caption1">Notre planète nous a accueilli</h5>
+                              </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="asset/slider_accueil/bungalow.jpg" alt="bungalow">
+                        <div class="carousel-caption d-none d-md-block slider_text_block ">
+                                <h5 id="s_caption2">elle nous nourrit et nous abreuve</h5>
+                              </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="asset/slider_accueil/activites.jpg" alt="activites">
+                        <div class="carousel-caption d-none d-md-block slider_text_block">
+                                <h5 id="s_caption3">alors préservons là</h5>
+
+                              </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="asset/slider_accueil/mangareva.jpg" alt="mangareva">
+                        <div class="carousel-caption d-none d-md-block slider_text_block">
+                                <h5 id="s_caption4">alors préservons là</h5>
+                              </div>
+                      </div>
+                    </div>
+                   
+                  </div> -->
+                  <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+                    
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                     
+                      <div class="carousel-item active">
+                          <div class="carousel-caption d-none d-md-block slider_text_block">
+                              <h5>Bienvenue </h5>
+                              <p>Venez découvrir Mangareva, île mystérieuse dans l'archipel des Gambiers, berceau du catholicisme en Polynésie, perle du Pacifique </p>
+                            </div>
+                        <img class="d-block w-100" src="asset/slider_accueil/bienvenue.jpg" alt="bienvenue">
+                        
+                        
+                      </div>
+                      
+                      <div class="carousel-item">
+                          <div class="carousel-caption d-none d-md-block slider_text_block">
+                              <h5>Nos chambres</h5>
+                              <p>sont prêtes à vous accueillir que vous soyez seul ou en famille.</p>
+                            </div>
+                        <img class="d-block w-100" src="asset/slider_accueil/bungalow.jpg" alt="bungalow">
+                        
+                      </div>
+                      
+                      <div class="carousel-item">
+                          <div class="carousel-caption d-none d-md-block slider_text_block">
+                              <h5>Les activités de l'île</h5>
+                              <p> Venez découvrir notre île avec ses vestiges de l''époque royale ou coloniale,nos motu,nos lagons et nos perles</p>
+                            </div>
+                        <img class="d-block w-100" src="asset/slider_accueil/activites.jpg" alt="activites">
+                        
+                      </div>
+
+                      <div class="carousel-item">
+                      
+                          <div class="carousel-caption d-none d-md-block slider_text_block">
+                              <h5>Mangareva</h5>
+                              <p>...</p>
+                            </div>
+                          <img class="d-block w-100" src="asset/slider_accueil/mangareva.jpg" alt="mangareva">
+                          
+                        </div>
+
+                    </div>
+                    
+                    
+                  </div>
+                  
+
+                </div>
+            </section>
+
+
+
+    <!-------------- PRESENTATION -------------->
+    <section>
+            <form action="https://formspree.io/jchansin.tcc@gmail.com" method="POST">
+                <input type="text" name="name">
+                <input type="email" name="_replyto">
+                <input type="text" name="body">
+                <input type="submit" value="Send">
+            </form> 
+
+    </section>
+
+
+
+    <!-------------- FOOTER -------------->
+    <footer>
+
+
+    </footer>
+
+</body>
+</html>

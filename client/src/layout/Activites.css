@@ -1,0 +1,45 @@
+body{
+    font-family: 'Open Sans', "PT Sans Narrow";
+   
+    text-align: justify;
+}
+
+h3, h2{
+    text-align : center;
+}
+
+.activity_card{
+    margin-top : 50px;
+    border-radius : 5px;
+    height : 600px;
+}
+
+.card_img {
+    height: 100%;
+}
+
+img{
+    height : 100%;
+    width : 100%;
+    background-color: #000;
+}
+
+.info_activity{
+    padding : 35px !important;
+    background-color: rgba(255, 255, 255, 0.199);
+}
+
+
+
+@media screen and (max-width: 850px) {
+
+    .info_activity, activity_card{
+        padding : 5px !important;
+    }
+
+    img{
+        background-color: #000;
+        margin: auto;
+    }
+    
+}

@@ -6,8 +6,8 @@ class Mangareva extends Component {
         return (
 
             <div>
-                <section id="slider_accueil">
-                <div id="carouselExampleIndicators" className="carousel slide carousel-fade" data-ride="carousel">
+                <section id="slider_mangareva">
+                <div id="carouselMangareva" className="carousel slide carousel-fade" data-ride="carousel">
                     <ol className="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to={0} className="active" />
                     <li data-target="#carouselExampleIndicators" data-slide-to={1} />
@@ -21,14 +21,14 @@ class Mangareva extends Component {
                         <p>Venez découvrir Mangareva, île mystérieuse dans l'archipel des Gambiers, berceau du catholicisme
                             en Polynésie, perle du Pacifique </p>
                         </div>
-                        <img className="d-block w-100" src="../../asset/mangareva/mangareva.jpg" alt="bienvenue" />
+                        <img className="d-block w-100" src="asset/mangareva/mangareva.jpg" alt="bienvenue" />
                     </div>
                     <div className="carousel-item">
                         <div className="carousel-caption d-none d-md-block slider_text_block">
                         <h5>Nos chambres</h5>
                         <p>sont prêtes à vous a ccueillir que vous soyez seul ou en famille.</p>
                         </div>
-                        <img className="d-block w-100" src="../../asset/mangareva/mangareva1.jpg" alt="bungalow" />
+                        <img className="d-block w-100" src="asset/mangareva/mangareva1.jpg" alt="bungalow" />
                     </div>
                     <div className="carousel-item">
                         <div className="carousel-caption d-none d-md-block slider_text_block">
@@ -36,14 +36,14 @@ class Mangareva extends Component {
                         <p> Venez découvrir notre île avec ses vestiges de l''époque royale ou coloniale,nos motu,nos lagons
                             et nos perles</p>
                         </div>
-                        <img className="d-block w-100" src="../../asset/mangareva/mangareva2.jpg" alt="activites" />
+                        <img className="d-block w-100" src="asset/mangareva/mangareva2.jpg" alt="activites" />
                     </div>
                     <div className="carousel-item">
                         <div className="carousel-caption d-none d-md-block slider_text_block">
                         <h5>Mangareva</h5>
                         <p>...</p>
                         </div>
-                        <img className="d-block w-100" src="../../asset/mangareva/mangareva5.jpg" alt="mangareva" />
+                        <img className="d-block w-100" src="asset/mangareva/mangareva5.jpg" alt="mangareva" />
                     </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ class Mangareva extends Component {
                 <section>
                 <article className="row">
                     <div className="col-md-4 col-xs-12 m_img">
-                    <img src="../../asset/mangareva/cathedrale.jpg" />
+                    <img src="asset/mangareva/cathedrale.jpg" />
                     </div>
                     <div className="col-md-8 col-xs-12">
                     <div className="v-align">
@@ -76,13 +76,13 @@ class Mangareva extends Component {
                     malesuada porta. Aliquam eu nisi at sem ullamcorper venenatis vitae eu mauris. Nulla eget lacus neque.</p>
                     <div className="row">
                     <div className="col-md-4 col-xs-12 m_img">
-                        <img src="../../asset/mangareva/mangareva1.jpg" />
+                        <img src="asset/mangareva/mangareva1.jpg" />
                     </div>
                     <div className="col-md-4 col-xs-12 m_img creve">
-                        <img src="../../asset/mangareva/mangareva2.jpg" />
+                        <img src="asset/mangareva/mangareva2.jpg" />
                     </div>
                     <div className="col-md-4 col-xs-12 m_img">
-                        <img src="../../asset/mangareva/mangareva3.jpg" />
+                        <img src="asset/mangareva/mangareva3.jpg" />
                     </div>
                     </div></article>
                 <article>
@@ -96,10 +96,10 @@ class Mangareva extends Component {
                 </article>
                 <div className="row">
                     <div className="col-md-6 col-xs-12 m_img">
-                    <img src="../../asset/mangareva/mangareva6.jpg" />
+                    <img src="asset/mangareva/mangareva6.jpg" />
                     </div>
                     <div className="col-md-6 col-xs-12 m_img">
-                    <img src="../../asset/mangareva/mangareva7.jpg" />
+                    <img src="asset/mangareva/mangareva7.jpg" />
                     </div>
                 </div>
             </section>

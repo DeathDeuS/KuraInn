@@ -18,7 +18,7 @@ class Bungalow extends Component {
 
                             <div className="col-10 m-auto" style={{height: 400}}>
 
-                                <section id="slider_accueil">
+                                <section id="slider_bungalow1">
                                     <div id="carouselBungalow" className="carousel slide carousel-fade" data-ride="carousel">
                                         <ol className="carousel-indicators">
                                             <li data-target="#carouselBungalow" data-slide-to={0} className="active" />
@@ -137,7 +137,7 @@ class Bungalow extends Component {
                             <h2 className="col-10">Bungalow 2</h2>
                             <div className="col-10 m-auto carousel1" style={{height: 400}}>
 
-                                <section id="slider_accueil">
+                                <section id="slider_bungalow2">
                                     <div id="carouselBungalow2" className="carousel slide carousel-fade" data-ride="carousel">
                                         <ol className="carousel-indicators">
                                             <li data-target="#carouselBungalow2" data-slide-to={0} className="active" />
@@ -225,17 +225,17 @@ class Bungalow extends Component {
 
                                                 <div className="form-group">
                                                     <label htmlFor="recipient-name" className="col-form-label">Nom :</label>
-                                                    <input className="form-control" id="recipient-name" type="text" name="Nom" required="required"/>
+                                                    <input className="form-control" id="recipient-name2" type="text" name="Nom" required="required"/>
                                                 </div>
 
                                                 <div className="form-group">
                                                     <label htmlFor="recipient-mail" className="col-form-label">E-mail :</label>
-                                                    <input className="form-control" id="recipient-mail" type="email" name="Mail" required="required"/>
+                                                    <input className="form-control" id="recipient-mail2" type="email" name="Mail" required="required"/>
                                                 </div>
 
                                                 <div className="form-group">
                                                     <label htmlFor="message-text" className="col-form-label">Message :</label>
-                                                    <textarea className="form-control" id="message-text" name="Message" required="required"/>
+                                                    <textarea className="form-control" id="message-text2" name="Message" required="required"/>
                                                 </div>
                                        
                                             </form>

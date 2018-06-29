@@ -30,14 +30,14 @@ class Activites extends Component {
                         <span>Payant</span>
                     </div>
                     <div className="col-lg-8 col-md-8 p-0 card_img">
-                        <img src="../../asset/activites/activite1.jpg" />
+                        <img src="asset/activites/activite1.jpg" />
                     </div>
                     </div>
 
                     {/*     2     */}
                     <div className=" activity_card row ">
                     <div className="col-md-8 p-0 card_img">
-                        <img src="../../asset/activites/activite2.jpg" />
+                        <img src="asset/activites/activite2.jpg" />
                     </div>
                     <div className="col-md-4 col-xs-12 p-0 info_activity">
                         <h3>Visite des vestiges</h3>
@@ -60,14 +60,14 @@ class Activites extends Component {
                         <span>Gratuit</span>
                     </div>
                     <div className="col-md-8 p-0 card_img">
-                        <img src="../../asset/activites/activite3.jpg" />
+                        <img src="asset/activites/activite3.jpg" />
                     </div>
                     </div>
 
                     {/*     4     */}
                     <div className=" activity_card row ">
                     <div className="col-md-8 p-0 card_img">
-                        <img src="../../asset/activites/activite4.jpg" />
+                        <img src="asset/activites/activite4.jpg" />
                     </div>
                     <div className="col-md-4 col-xs-12 p-0 info_activity">
                         <h3>Randonnée, tour de l'île à pied ou à vélo</h3>

@@ -98,43 +98,59 @@ class Layout extends Component {
 
                 {/* Footer code */}
                 <div className="footer">
-                Pour nous contacter, veuillez remplir ce formulaire :
-                    <form action="https://formspree.io/jchansin.tcc@gmail.com" 
-                        method="POST">
-                        <div className="row">
-                            <div className="col-2">
-                            Nom : 
-                            </div>
-                            <div className="col-10">
-                                <input type="text" name="Nom" required="required"/>
-                            </div>
+
+                    <div className="row">
+
+                        <div className="col-6">
+                            Pour nous contacter, veuillez remplir ce formulaire :
+                            <form action="https://formspree.io/jchansin.tcc@gmail.com" 
+                                method="POST">
+                                <div className="row">
+                                    <div className="col-2">
+                                    Nom : 
+                                    </div>
+                                    <div className="col-10">
+                                        <input type="text" name="Nom" required="required"/>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col-2">
+                                    E-mail : 
+                                    </div>
+                                    <div className="col-10">
+                                        <input type="email" name="Mail" required="required"/>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col-2">
+                                    Objet : 
+                                    </div>
+                                    <div className="col-10">
+                                        <input type="text" name="Objet" required="required"/>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col-2">
+                                    Message : 
+                                    </div>
+                                    <div className="col-10">
+                                        <textarea rows="3" cols="20" name="Message" required="required"/>
+                                        <input type="submit" value="Envoyer"/>
+                                    </div>
+                                </div>
+                            </form> 
                         </div>
-                        <div className="row">
-                            <div className="col-2">
-                            Email : 
-                            </div>
-                            <div className="col-10">
-                                <input type="email" name="Mail" required="required"/>
-                            </div>
+
+                        <div className="col-6">                        
+                            <u>Contact webmaster :</u><br/>
+                            croussel.tcc@gmail.com
                         </div>
-                        <div className="row">
-                            <div className="col-2">
-                            Objet : 
-                            </div>
-                            <div className="col-10">
-                                <input type="text" name="Objet" required="required"/>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-2">
-                            Message : 
-                            </div>
-                            <div className="col-10">
-                                <textarea rows="3" cols="20" name="Message" required="required"/>
-                                <input type="submit" value="Envoyer"/>
-                            </div>
-                        </div>
-                    </form> 
+                    </div>
+                    <br/>
+                    <div style={{textAlign: 'center', fontSize:'small'}}>
+                        Crédits : Christian ROUSSEL, Jérôme CHANSIN
+
+                    </div>
                 </div>
             </div>
 

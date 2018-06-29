@@ -54,7 +54,7 @@ class Presentation extends Component {
             <div className="container">
               <h2>Kura Inn pour une expérience inoubliable</h2>
               <br />
-              <img className="img_p_home " src="../../asset/s1.jpg" />
+              <img className="img_p_home " src="asset/s1.jpg" />
               <br />
               <br />
               <article className="col-50">
@@ -88,15 +88,15 @@ class Presentation extends Component {
                 {/* photos gérants */}
                 <div className="presentation_card col-md-6 col-xs-12">
                   <br />
-                  <img className="img-round shadowbox" src="../../asset/avatar_girl.jpg" />
-                  {/* <div class="img-round" style="background:url(../../asset/avatar_girl.jpg) no-repeat center;"></div> */}
+                  <img className="img-round shadowbox" src="asset/avatar_girl.jpg" />
+                  {/* <div class="img-round" style="background:url(asset/avatar_girl.jpg) no-repeat center;"></div> */}
                   <h4>Mlle Beatrice Laureen</h4>
                   <p>gérante de la pension</p>
                 </div>
                 <div className="presentation_card col-md-6 col-xs-12">
                   <br />
-                  <img className=" img-round shadowbox" src="../../asset/avatar_boy.jpg" />
-                  {/* <div class="img-round" style="background:url(../../asset/avatar_boy.jpg) no-repeat center; "></div> */}
+                  <img className=" img-round shadowbox" src="asset/avatar_boy.jpg" />
+                  {/* <div class="img-round" style="background:url(asset/avatar_boy.jpg) no-repeat center; "></div> */}
                   <h4>M lorio</h4>
                   <p>fille de la gérante</p>
                 </div>

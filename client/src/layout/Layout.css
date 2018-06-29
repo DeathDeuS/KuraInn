@@ -113,7 +113,7 @@ div.dropdown-menu.show {
     left: 0px;
     bottom: 0px;
     width: 100%;
-    background-color: black;
+    background-color: rgba(27, 99, 128, 0.8);
     color: white;
     padding: 2vw;
     margin-top: 50px;
